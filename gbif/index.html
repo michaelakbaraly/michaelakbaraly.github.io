@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>gbif-searching-tool</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body ng-app="gbif-tool">
+<div ng-controller="MainController as mainController">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-11">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">GBIF Searching Tool</a>
+          </div>
+        </div>
+        <div class="hidden-xs col-xs-1">
+          <img src="assets/images/gbif.png">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container" ui-view></div>
+</div>
+</body>
+
+<script src="js/lib.js"></script>
+<script src="js/app.js"></script>
+</html>
